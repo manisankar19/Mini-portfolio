@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Portfolio</div>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-wrapper">
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h1>Welcome to My Portfolio</h1>
+                <p>I'm a creative developer passionate about building amazing digital experiences and bringing ideas to life through code.</p>
+                <a href="#contact" class="cta-button">Get In Touch</a>
+            </div>
+        </section>
+
+        <section class="projects-section" id="projects">
+            <div class="projects-container">
+                <h2>Projects</h2>
+                <p class="projects-subtitle">Here are some of my recent projects and accomplishments.</p>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>Automation of Radiological Plant</h3>
+                        <p class="project-description">Successful building of an engineering automation system for a utility system (RLG & PRAFPUL).</p>
+                        <a href="#" class="project-button">View more</a>
+                    </div>
+                    <div class="project-card">
+                        <h3>SPF Plant</h3>
+                        <p class="project-description">Successful construction of a new plant for making target preparation for the Mo99 plant.</p>
+                        <a href="#" class="project-button">View more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <div class="contact-container">
+                <h2>Contact Me</h2>
+                <p class="contact-subtitle">Have a question or want to work together? Send me a message!</p>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name <span class="required">*</span></label>
+                        <input 
+                            type="text" 
+                            id="name" 
+                            name="name" 
+                            placeholder="Your name" 
+                            required
+                        >
+                        <span class="error-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email <span class="required">*</span></label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            placeholder="your.email@example.com" 
+                            required
+                        >
+                        <span class="error-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message <span class="required">*</span></label>
+                        <textarea 
+                            id="message" 
+                            name="message" 
+                            rows="5" 
+                            placeholder="Your message here..." 
+                            required
+                        ></textarea>
+                        <span class="error-message"></span>
+                    </div>
+
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mini Portfolio. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#">LinkedIn</a>
+            <a href="#">GitHub</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
