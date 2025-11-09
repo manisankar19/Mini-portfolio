@@ -1,3 +1,19 @@
+// Projects toggle functionality
+const toggleProjectsBtn = document.getElementById('toggle-projects-btn');
+const projectsContent = document.querySelector('.projects-content');
+
+// Toggle projects section visibility
+toggleProjectsBtn.addEventListener('click', () => {
+    projectsContent.classList.toggle('visible');
+    
+    // Update button text based on visibility
+    if (projectsContent.classList.contains('visible')) {
+        toggleProjectsBtn.textContent = 'Hide Projects';
+    } else {
+        toggleProjectsBtn.textContent = 'Toggle Projects';
+    }
+});
+
 // Mobile menu toggle functionality
 const menuToggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
